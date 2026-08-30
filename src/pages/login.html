@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login — ATHLETIQ AI</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+
+<header class="site-header">
+    <nav class="nav" aria-label="Navegação principal">
+        <a href="../../index.html" class="nav-brand">ATHLETIQ AI</a>
+        <ul class="nav-links">
+            <li><a href="../../index.html">Home</a></li>
+            <li><a href="/src/pages/produto.html">Produto</a></li>
+            <li><a href="/src/pages/instrucoes.html">Instruções</a></li>
+            <li><a href="/src/pages/equipe.html">Equipe</a></li>
+            <li><a href="/src/pages/referencias.html">Referências</a></li>
+            <li><a href="/src/pages/jogo.html">Jogo</a></li>
+        </ul>
+        <div class="nav-right">
+            <button class="theme-toggle" aria-label="Alternar tema">🌙</button>
+            <a href="login.html" id="auth-nav-btn" class="btn btn-primary">Começar Agora</a>
+            <button class="nav-mobile-toggle" aria-label="Abrir menu" aria-expanded="false">☰</button>
+        </div>
+    </nav>
+</header>
+
+    <main>
+
+        <section class="auth-hero">
+            <div class="auth-copy">
+                <span class="eyebrow-pill">🏅&nbsp;Ciência do Esporte de Elite</span>
+                <h1>Bem-vindo de volta ao<span>ATHLETIQ AI</span></h1>
+                <p>Entre na sua conta e acompanhe seu desempenho físico, recuperação e evolução com inteligência
+                    artificial.</p>
+                <div class="auth-copy-media">
+                    <img src="https://www.figma.com/api/mcp/asset/de0eec5c-6fed-4ab8-899c-f2a3f5b0485d.png"
+                        alt="Tecnologia vestível ATHLETIQ em uso">
+                </div>
+            </div>
+
+            <form class="auth-panel"
+                onsubmit="event.preventDefault(); handleLoginSubmit(this);"
+                aria-label="Formulário de login">
+                <div class="section-head" style="text-align:center; margin-bottom:24px;">
+                    <h2 style="font-size:32px;">Acesso à Conta</h2>
+                    <p style="text-align:center; margin-top:4px;">Utilize suas credenciais oficiais</p>
+                </div>
+                <div class="field"><label for="email-login">E-mail</label><input id="email-login" type="email"
+                        placeholder="nome@exemplo.com" required></div>
+                <a href="#" class="auth-forgot">Esqueceu sua senha?</a>
+                <div class="field"><label for="senha-login">Senha</label><input id="senha-login" type="password"
+                        placeholder="••••••••" required></div>
+                <label class="auth-check"><input type="checkbox"> Lembrar de mim</label>
+                <button type="submit" class="btn btn-primary">Entrar na Plataforma</button>
+                <a href="cadastro.html" class="btn btn-outline" style="margin-bottom:16px;">Criar Nova Conta</a>
+                <p
+                    style="text-align:center; font-size:16px; color:var(--text-secondary); border-top:1px solid var(--border-hair); padding-top:16px;">
+                    Ainda não possui conta? <a href="cadastro.html"
+                        style="color:var(--accent); font-weight:600;">Cadastre-se</a></p>
+            </form>
+        </section>
+
+    </main>
+
+    <script src="../js/script.js"></script>
+</body>
+
+</html>
