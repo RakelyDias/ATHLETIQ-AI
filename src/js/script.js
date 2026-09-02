@@ -1,4 +1,4 @@
-// (Modo Claro / Modo Escuro — deixa os dois estados do Figma por meio do CSS vars)
+// Theme toggle (Modo Claro / Modo Escuro — replica os dois estados do Figma via CSS vars)
 (function () {
     const root = document.documentElement;
     const stored = localStorage.getItem('athletiq-theme');
@@ -25,7 +25,7 @@
     }
 })();
 
-// Login: mensagem de agradecimento ao concluir
+// Login: agradecimento ao concluir
 function handleLoginSubmit(form) {
     const btn = form.querySelector('.btn-primary');
     btn.textContent = 'Entrando ✓';
@@ -42,7 +42,7 @@ function handleLoginSubmit(form) {
     }, 1500);
 }
 
-// Estado de login alterna "Começar Agora" para -->  "Sair da Conta" no header
+// Estado de login: alterna "Começar Agora" / "Sair da Conta" no header
 document.addEventListener('DOMContentLoaded', () => {
     const authBtn = document.getElementById('auth-nav-btn');
     if (!authBtn) return;
@@ -76,7 +76,7 @@ function showLoginThanks() {
     toast.classList.add('show');
 }
 
-// Nav mobile (menu hamburguer)
+// Nav mobile (menu hamburguer simples)
 document.addEventListener('DOMContentLoaded', () => {
     const navToggle = document.querySelector('.nav-mobile-toggle');
     const navLinks = document.querySelector('.nav-links');
