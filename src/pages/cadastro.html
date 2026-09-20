@@ -43,7 +43,7 @@
             </div>
 
             <form class="auth-panel"
-                onsubmit="event.preventDefault(); this.querySelector('.btn-primary').textContent='Conta criada ✓';"
+                onsubmit="event.preventDefault(); handleCadastroSubmit(this);"
                 aria-label="Formulário de cadastro">
                 <div class="field"><label for="nome-cad">Nome Completo</label><input id="nome-cad" type="text"
                         placeholder="Ex: João Silva" required></div>
